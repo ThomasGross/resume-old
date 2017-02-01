@@ -5,12 +5,26 @@
 }
 .topBanner{
     background-color : rgba(255,255,255, 0.5);
-    margin: 100px;
+    margin: 100px 0px 100px 0px;
+}
+
+.middleBanner {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.middleBanner2 {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .bottomBanner{
     background-color : rgba(255,255,255, 0.5);
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 hr {
@@ -18,13 +32,15 @@ hr {
     max-width: 200rem;
     height: 0;
     border-top: 0;
-    margin: 2.25rem auto;
     border-bottom: 3px solid #eeeeee;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .text-center {
     text-align: center;
 }
+
 
 h1 {
     font-style: normal;
@@ -77,9 +93,13 @@ ul {
 }
 
 img{
-    margin: 10px;
-    padding: 10px;
-    width: 350px;
-    height: 300px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    max-height: 1000px;
+
 }
+
+
+}
+
 
