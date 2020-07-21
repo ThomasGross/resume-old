@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+body {
+  color: #37383a;
+  font-family: 'Lato';
+  font-size: 14px;
+  background-color: #f6f6f6; }
+
+h2 {
+  font-weight: 400;
+  font-family: 'Lato';
+  color: rgba(51, 51, 51, 0.6);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px; }
+
+h3 {
+  font-size: 14px;
+  font-family: 'Poppins';
+  display: flex;
+  justify-content: space-between; }
+
+.experience {
+  font-size: 14px; }
+  .experience span {
+    opacity: 70%; }
+  .experience__item {
+    margin-bottom: 30px; }
+
+.row__border-bottom {
+  border-bottom: 1px dotted grey; }
+
+.projects {
+  font-size: 14px; }
+  .projects span {
+    opacity: 70%; }
+  .projects__item {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: -200px; }
+    .projects__item--no-margin {
+      margin-top: 0; }
+    .projects__item__image {
+      width: 100%;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: box-shadow 0.3s ease-in-out; }
+      .projects__item:hover .projects__item__image {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0); }
+      .projects__item__image img {
+        width: 100%; }
+    .projects__item__title {
+      transition: color 0.3s ease-in-out; }
+      .projects__item:hover .projects__item__title {
+        color: rgba(0, 0, 0, 0.5); }
+    .projects__item a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+
+.contact div {
+  position: relative; }
+  .contact div a {
+    color: rgba(51, 51, 51, 0.6); }
+  .contact div .fa {
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    color: rgba(51, 51, 51, 0.9); }
+
+.list {
+  margin-bottom: 30px; }
+
+.main-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-bottom: 70px; }
+  .main-container .container-title {
+    width: 100%; }
+  .main-container .row {
+    display: flex;
+    margin-top: 50px; }
+    .main-container .row .profile-container__image {
+      width: 50%;
+      height: 230px;
+      width: 230px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: auto;
+      margin-top: 20px; }
+      .main-container .row .profile-container__image img {
+        object-fit: cover;
+        object-position: top;
+        height: inherit;
+        width: inherit; }
