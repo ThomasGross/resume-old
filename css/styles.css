@@ -30,55 +30,77 @@ h3 {
   opacity: 0;
   padding-top: 20px; }
 
-.delay-0.show {
+.delay-500.show {
   opacity: 1;
   padding-top: 0px;
-  transition: opacity 0.5s 0s ease-in-out, padding-top 0.5s 0s ease-in-out; }
+  transition: opacity 0.5s ease-in-out, padding-top .5s ease-in-out;
+  transition-delay: 500ms; }
 
-.delay-1.show {
+.delay-1000.show {
   opacity: 1;
   padding-top: 0px;
-  transition: opacity 0.5s 1s ease-in-out, padding-top 0.5s 1s ease-in-out; }
+  transition: opacity 0.5s ease-in-out, padding-top .5s ease-in-out;
+  transition-delay: 1000ms; }
 
-.delay-2.show {
+.delay-1500.show {
   opacity: 1;
   padding-top: 0px;
-  transition: opacity 0.5s 2s ease-in-out, padding-top 0.5s 2s ease-in-out; }
+  transition: opacity 0.5s ease-in-out, padding-top .5s ease-in-out;
+  transition-delay: 1500ms; }
 
-.delay-3.show {
+.delay-2000.show {
   opacity: 1;
   padding-top: 0px;
-  transition: opacity 0.5s 3s ease-in-out, padding-top 0.5s 3s ease-in-out; }
+  transition: opacity 0.5s ease-in-out, padding-top .5s ease-in-out;
+  transition-delay: 2000ms; }
 
-.delay-4.show {
+.delay-2500.show {
   opacity: 1;
   padding-top: 0px;
-  transition: opacity 0.5s 4s ease-in-out, padding-top 0.5s 4s ease-in-out; }
+  transition: opacity 0.5s ease-in-out, padding-top .5s ease-in-out;
+  transition-delay: 2500ms; }
 
-.delay-5.show {
+.delay-3000.show {
   opacity: 1;
   padding-top: 0px;
-  transition: opacity 0.5s 5s ease-in-out, padding-top 0.5s 5s ease-in-out; }
+  transition: opacity 0.5s ease-in-out, padding-top .5s ease-in-out;
+  transition-delay: 3000ms; }
 
-.delay-6.show {
+.delay-3500.show {
   opacity: 1;
   padding-top: 0px;
-  transition: opacity 0.5s 6s ease-in-out, padding-top 0.5s 6s ease-in-out; }
+  transition: opacity 0.5s ease-in-out, padding-top .5s ease-in-out;
+  transition-delay: 3500ms; }
 
-.delay-7.show {
+.delay-4000.show {
   opacity: 1;
   padding-top: 0px;
-  transition: opacity 0.5s 7s ease-in-out, padding-top 0.5s 7s ease-in-out; }
+  transition: opacity 0.5s ease-in-out, padding-top .5s ease-in-out;
+  transition-delay: 4000ms; }
 
-.delay-8.show {
+.delay-4500.show {
   opacity: 1;
   padding-top: 0px;
-  transition: opacity 0.5s 8s ease-in-out, padding-top 0.5s 8s ease-in-out; }
+  transition: opacity 0.5s ease-in-out, padding-top .5s ease-in-out;
+  transition-delay: 4500ms; }
 
-.delay-9.show {
+.delay-5000.show {
   opacity: 1;
   padding-top: 0px;
-  transition: opacity 0.5s 9s ease-in-out, padding-top 0.5s 9s ease-in-out; }
+  transition: opacity 0.5s ease-in-out, padding-top .5s ease-in-out;
+  transition-delay: 5000ms; }
+
+.delay-5500.show {
+  opacity: 1;
+  padding-top: 0px;
+  transition: opacity 0.5s ease-in-out, padding-top .5s ease-in-out;
+  transition-delay: 5500ms; }
+
+.delay-6000.show {
+  opacity: 1;
+  padding-top: 0px;
+  transition: opacity 0.5s ease-in-out, padding-top .5s ease-in-out;
+  transition-delay: 6000ms; }
 
 .row__border-bottom {
   border-bottom: 1px dotted grey; }

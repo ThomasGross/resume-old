@@ -1,5 +1,4 @@
 .container-title .box {
-  width: 500px;
   position: relative;
   display: flex;
   flex-direction: column; }
