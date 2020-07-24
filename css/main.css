@@ -577,6 +577,11 @@ h3 {
             top: 45%;
             transform: translate(-50%, -50%); } }
 
+/* override styles when printing */
+@media print {
+  .projects__item__image {
+    max-height: 500px; } }
+
 .container-title .box {
   position: relative;
   display: flex;

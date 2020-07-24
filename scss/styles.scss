@@ -273,3 +273,10 @@ $delays: 3000, 4000, 4100, 4200, 4300, 4400, 4500, 5000, 5500, 5700, 5800, 5900,
         }
     }
 }
+
+/* override styles when printing */
+@media print {
+    .projects__item__image {
+        max-height: 500px;
+    }
+}
