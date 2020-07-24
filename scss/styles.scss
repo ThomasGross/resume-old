@@ -43,47 +43,63 @@ h3 {
     }
 }
 
+.line-container {
+    position: relative;
+    top: 3px;
+    height: calc(100% + 50px);
+
+    .line {
+        position: absolute;
+        border-left: 1px rgba(55,56,58, .3) dotted;
+        height: calc(100% - 7px);
+        left: 50%;
+        transform: translate(50%, 7px);
+
+        &:before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            position: absolute;
+            background: rgba(55,56,58, .3);
+            left: -4px;
+            top: -7px;
+        }
+
+        &--stop {
+            border-left: 1px transparent dotted;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgb(246,246,246);
+        bottom: 0;
+    }
+}
 
 .delay {
     opacity: 0;
-    padding-top: 20px;
+    // transform: translateY(20px);
 }
 
-$delays: 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000;
+$delays: 4000, 4100, 4200, 4300, 4400, 4500, 5000, 5500, 5700, 5800, 5900, 6000, 6300, 8000, 8300, 8700, 9300, 10700, 11300, 12700;
 
 @each $delay in $delays {
     .delay-#{$delay}.show {
         opacity: 1;
-        padding-top: 0px;
+        transform: translateY(0);
         transition: opacity 0.5s ease-in-out,
-                    padding-top .5s ease-in-out;
+                    transform .5s ease-in-out;
         transition-delay: #{$delay}ms;
     }
-}
 
-
-
-// $delay: 0;
-
-// @while $delay < 10 {
-//     .delay-#{$delay}.show {
-//         opacity: 1;
-//         padding-top: 0px;
-//         transition: opacity 0.5s ease-in-out,
-//                     padding-top .5s ease-in-out;
-//         transition-delay: #{$delay}s;
-//     }
-
-//     $delay: $delay + 1;
-// }
-
-.row {
-    &__border-top {
-
-    }
-
-    &__border-bottom {
-        border-bottom: 1px dotted grey;
+    .overlay-delay-#{$delay}.show {
+        height: 0 !important;
+        transition: height 2s ease;
+        transition-delay: #{$delay}ms;
     }
 }
 
@@ -136,17 +152,6 @@ $delays: 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000;
 
             #{$hover} & {
                 color: rgba(0,0,0,0.5);
-            }
-        }
-
-        a {
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
             }
         }
     }
