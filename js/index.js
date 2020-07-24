@@ -1,5 +1,9 @@
-window.onbeforeunload = function () {
+window.onbeforeunload = () => {
   window.scrollTo(0, 0);
+}
+
+window.onresize = () => {
+  initLineProjects();
 }
 
 window.addEventListener('load', (event) => {

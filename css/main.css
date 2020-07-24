@@ -30,7 +30,8 @@ h3 {
 .line-container {
   position: relative;
   top: 3px;
-  height: calc(100% + 50px); }
+  height: calc(100% + 50px);
+  display: none; }
   .line-container .line {
     position: absolute;
     border-left: 1px rgba(55, 56, 58, 0.3) dotted;
@@ -54,229 +55,432 @@ h3 {
     width: 100%;
     background: #f6f6f6;
     bottom: 0; }
+  @media (min-width: 992px) {
+    .line-container {
+      display: block; } }
 
 .delay {
   opacity: 0; }
 
+@media (max-width: 991px) {
+  .mb-delay-3000.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 3000ms; } }
+
+.delay-3000.show {
+  opacity: 1;
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-3000.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 3000ms; } }
+
+.overlay-delay-3000.show {
+  height: 0 !important;
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-3000.show {
+      transition-delay: 3000ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-4000.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 4000ms; } }
+
 .delay-4000.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 4000ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-4000.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 4000ms; } }
 
 .overlay-delay-4000.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 4000ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-4000.show {
+      transition-delay: 4000ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-4100.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 4100ms; } }
 
 .delay-4100.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 4100ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-4100.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 4100ms; } }
 
 .overlay-delay-4100.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 4100ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-4100.show {
+      transition-delay: 4100ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-4200.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 4200ms; } }
 
 .delay-4200.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 4200ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-4200.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 4200ms; } }
 
 .overlay-delay-4200.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 4200ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-4200.show {
+      transition-delay: 4200ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-4300.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 4300ms; } }
 
 .delay-4300.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 4300ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-4300.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 4300ms; } }
 
 .overlay-delay-4300.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 4300ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-4300.show {
+      transition-delay: 4300ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-4400.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 4400ms; } }
 
 .delay-4400.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 4400ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-4400.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 4400ms; } }
 
 .overlay-delay-4400.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 4400ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-4400.show {
+      transition-delay: 4400ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-4500.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 4500ms; } }
 
 .delay-4500.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 4500ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-4500.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 4500ms; } }
 
 .overlay-delay-4500.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 4500ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-4500.show {
+      transition-delay: 4500ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-5000.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 5000ms; } }
 
 .delay-5000.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 5000ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-5000.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 5000ms; } }
 
 .overlay-delay-5000.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 5000ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-5000.show {
+      transition-delay: 5000ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-5500.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 5500ms; } }
 
 .delay-5500.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 5500ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-5500.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 5500ms; } }
 
 .overlay-delay-5500.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 5500ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-5500.show {
+      transition-delay: 5500ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-5700.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 5700ms; } }
 
 .delay-5700.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 5700ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-5700.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 5700ms; } }
 
 .overlay-delay-5700.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 5700ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-5700.show {
+      transition-delay: 5700ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-5800.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 5800ms; } }
 
 .delay-5800.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 5800ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-5800.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 5800ms; } }
 
 .overlay-delay-5800.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 5800ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-5800.show {
+      transition-delay: 5800ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-5900.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 5900ms; } }
 
 .delay-5900.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 5900ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-5900.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 5900ms; } }
 
 .overlay-delay-5900.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 5900ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-5900.show {
+      transition-delay: 5900ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-6000.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 6000ms; } }
 
 .delay-6000.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 6000ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-6000.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 6000ms; } }
 
 .overlay-delay-6000.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 6000ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-6000.show {
+      transition-delay: 6000ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-6300.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 6300ms; } }
 
 .delay-6300.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 6300ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-6300.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 6300ms; } }
 
 .overlay-delay-6300.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 6300ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-6300.show {
+      transition-delay: 6300ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-8000.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 8000ms; } }
 
 .delay-8000.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 8000ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-8000.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 8000ms; } }
 
 .overlay-delay-8000.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 8000ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-8000.show {
+      transition-delay: 8000ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-8300.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 8300ms; } }
 
 .delay-8300.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 8300ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-8300.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 8300ms; } }
 
 .overlay-delay-8300.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 8300ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-8300.show {
+      transition-delay: 8300ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-8700.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 8700ms; } }
 
 .delay-8700.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 8700ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-8700.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 8700ms; } }
 
 .overlay-delay-8700.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 8700ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-8700.show {
+      transition-delay: 8700ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-9300.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 9300ms; } }
 
 .delay-9300.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 9300ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-9300.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 9300ms; } }
 
 .overlay-delay-9300.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 9300ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-9300.show {
+      transition-delay: 9300ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-10700.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 10700ms; } }
 
 .delay-10700.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 10700ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-10700.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 10700ms; } }
 
 .overlay-delay-10700.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 10700ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-10700.show {
+      transition-delay: 10700ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-11300.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 11300ms; } }
 
 .delay-11300.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 11300ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-11300.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 11300ms; } }
 
 .overlay-delay-11300.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 11300ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-11300.show {
+      transition-delay: 11300ms; } }
+
+@media (max-width: 991px) {
+  .mb-delay-12700.show {
+    transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+    transition-delay: 12700ms; } }
 
 .delay-12700.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
-  transition-delay: 12700ms; }
+  transform: translateY(0); }
+  @media (min-width: 992px) {
+    .delay-12700.show {
+      transition: opacity 0.5s ease-in-out, transform .5s ease-in-out;
+      transition-delay: 12700ms; } }
 
 .overlay-delay-12700.show {
   height: 0 !important;
-  transition: height 2s ease;
-  transition-delay: 12700ms; }
+  transition: height 2s ease; }
+  @media (min-width: 992px) {
+    .overlay-delay-12700.show {
+      transition-delay: 12700ms; } }
 
 .projects {
   font-size: 14px; }

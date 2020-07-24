@@ -47,6 +47,7 @@ h3 {
     position: relative;
     top: 3px;
     height: calc(100% + 50px);
+    display: none;
 
     .line {
         position: absolute;
@@ -78,6 +79,10 @@ h3 {
         background: rgb(246,246,246);
         bottom: 0;
     }
+
+    @include media($bp-md) {
+        display: block;
+    }
 }
 
 .delay {
@@ -85,21 +90,35 @@ h3 {
     // transform: translateY(20px);
 }
 
-$delays: 4000, 4100, 4200, 4300, 4400, 4500, 5000, 5500, 5700, 5800, 5900, 6000, 6300, 8000, 8300, 8700, 9300, 10700, 11300, 12700;
+$delays: 3000, 4000, 4100, 4200, 4300, 4400, 4500, 5000, 5500, 5700, 5800, 5900, 6000, 6300, 8000, 8300, 8700, 9300, 10700, 11300, 12700;
 
 @each $delay in $delays {
+    .mb-delay-#{$delay}.show {
+        @include media($bp-md-above) {
+            transition: opacity 0.5s ease-in-out,
+                        transform .5s ease-in-out;
+            transition-delay: #{$delay}ms; 
+        }
+    }
+
     .delay-#{$delay}.show {
         opacity: 1;
         transform: translateY(0);
-        transition: opacity 0.5s ease-in-out,
-                    transform .5s ease-in-out;
-        transition-delay: #{$delay}ms;
+
+        @include media($bp-md) {
+            transition: opacity 0.5s ease-in-out,
+                        transform .5s ease-in-out;
+            transition-delay: #{$delay}ms;
+        }
     }
 
     .overlay-delay-#{$delay}.show {
         height: 0 !important;
         transition: height 2s ease;
-        transition-delay: #{$delay}ms;
+
+        @include media($bp-md) {
+            transition-delay: #{$delay}ms;
+        }
     }
 }
 
