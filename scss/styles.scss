@@ -266,8 +266,8 @@ $delays: 3000, 4000, 4100, 4200, 4300, 4400, 4500, 5000, 5500, 5700, 5800, 5900,
 
                     &:hover {
                         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-                        height: 300px;
-                        width: 300px;
+                        height: 270px;
+                        width: 270px;
                     }
 
                     @include media($bp-sm) {
