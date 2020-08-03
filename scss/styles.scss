@@ -136,11 +136,11 @@ $delays: 3000, 4000, 4100, 4200, 4300, 4400, 4500, 5000, 5500, 5700, 5800, 5900,
         margin-bottom: 30px;
 
         @include media($bp-md) {
-            margin-top: -180px;
+            margin-top: -160px;
         }
 
         @include media($bp-lg) {
-            margin-top: -200px;
+            margin-top: -180px;
         }
 
         &--no-margin {
@@ -164,6 +164,10 @@ $delays: 3000, 4000, 4100, 4200, 4300, 4400, 4500, 5000, 5500, 5700, 5800, 5900,
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             transition: box-shadow 0.3s ease-in-out;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
 
             #{$hover} & {
                 box-shadow: 0 1px 2px rgba(0,0,0,0);
