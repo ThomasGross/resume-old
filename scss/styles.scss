@@ -151,6 +151,14 @@ $delays: 3000, 4000, 4100, 4200, 4300, 4400, 4500, 5000, 5500, 5700, 5800, 5900,
             $hover: &;
         }
 
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
         &__image {
             width: 100%;
             overflow: hidden;
@@ -276,7 +284,12 @@ $delays: 3000, 4000, 4100, 4200, 4300, 4400, 4500, 5000, 5500, 5700, 5800, 5900,
 
 /* override styles when printing */
 @media print {
-    .projects__item__image {
-        max-height: 500px;
+    .projects {
+        .row {
+            display: flex;
+            .projects__item {
+                max-width: 50%;
+            }
+        }
     }
 }

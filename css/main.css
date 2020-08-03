@@ -497,6 +497,12 @@ h3 {
         margin-top: -200px; } }
     .projects__item--no-margin {
       margin-top: 0; }
+    .projects__item a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
     .projects__item__image {
       width: 100%;
       overflow: hidden;
@@ -579,8 +585,10 @@ h3 {
 
 /* override styles when printing */
 @media print {
-  .projects__item__image {
-    max-height: 500px; } }
+  .projects .row {
+    display: flex; }
+    .projects .row .projects__item {
+      max-width: 50%; } }
 
 .container-title .box {
   position: relative;
