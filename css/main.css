@@ -542,12 +542,34 @@ h3 {
 .list {
   margin-bottom: 30px; }
 
+.lang-selector {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: rgba(51, 51, 51, 0.5);
+  font-family: 'Lato';
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  z-index: 999999; }
+  @media (max-width: 767px) {
+    .lang-selector {
+      position: absolute; } }
+  .lang-selector:hover {
+    cursor: pointer; }
+  .lang-selector span {
+    font-weight: lighter; }
+    .lang-selector span.active {
+      font-weight: bold; }
+
 .main-container {
   margin: auto;
   display: flex;
   flex-direction: column;
   margin-top: 70px;
   margin-bottom: 70px; }
+  .main-container.hide {
+    display: none; }
   .main-container .container-title {
     width: 100%;
     margin-top: 0; }

@@ -221,12 +221,44 @@ $delays: 3000, 4000, 4100, 4200, 4300, 4400, 4500, 5000, 5500, 5700, 5800, 5900,
     margin-bottom: 30px;
 }
 
+.lang-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: rgba(#333, .5);
+    font-family: 'Lato';
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    z-index: 999999;
+
+    @include media($bp-xs) {
+        position: absolute;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    span {
+        font-weight: lighter;
+
+        &.active {
+            font-weight: bold;
+        }
+    }
+}
+
 .main-container {
     margin: auto;
     display: flex;
     flex-direction: column;
     margin-top: 70px;
     margin-bottom: 70px;
+
+    &.hide {
+        display: none;
+    }
 
     .container-title {
         width: 100%;
