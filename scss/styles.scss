@@ -230,7 +230,7 @@ $delays: 3000, 4000, 4100, 4200, 4300, 4400, 4500, 5000, 5500, 5700, 5800, 5900,
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    z-index: 999999;
+    z-index: 999999999;
 
     @include media($bp-xs) {
         position: absolute;
